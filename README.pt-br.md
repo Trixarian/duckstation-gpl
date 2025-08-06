@@ -3,7 +3,7 @@ Tradução:
 # DuckStation - Emulador de PlayStation 1, também conhecido como PSX
 [Últimas Notícias](#latest-news) | [Recursos](#features) | [Download e Execução](#downloading-and-running) | [Compilação](#building) | [Avisos Legais](#disclaimers)
 
-**Últimas Versões para Windows 10/11, Linux (AppImage/Flatpak) e macOS:** https://github.com/stenzek/duckstation/releases/tag/latest
+**Últimas Versões para Windows 10/11, Linux (AppImage/Flatpak) e macOS:** https://github.com/Trixarian/duckstation-gpl/releases/tag/preview
 
 **Lista de Compatibilidade de Jogos:** https://docs.google.com/spreadsheets/d/1H66MxViRjjE5f8hOl5RQmF5woS1murio2dsLn14kEqo/edit
 
@@ -62,11 +62,11 @@ Executáveis do DuckStation para Windows x64/ARM64, Linux x86_64 (nos formatos A
 ### Windows
 
 DuckStation **requer** Windows 10/11, especificamente a versão 1809 ou mais recente. Se você ainda estiver usando Windows 7/8/8.1, o DuckStation **não funcionará** no seu sistema operacional. Usar esses sistemas operacionais em 2023 deve ser considerado um risco de segurança, recomendaria atualizar para algo que receba suporte do fornecedor.
-Se você precisa usar um sistema operacional mais antigo, [v0.1-5624](https://github.com/stenzek/duckstation/releases/tag/v0.1-5624) é a última versão que funcionará. Mas não espere receber nenhuma assistência, essas compilações não são mais suportadas.
+Se você precisa usar um sistema operacional mais antigo, [v0.1-5624](https://github.com/Trixarian/duckstation-gpl/releases/tag/v0.1-5624) é a última versão que funcionará. Mas não espere receber nenhuma assistência, essas compilações não são mais suportadas.
 
 Para baixar:
- - Acesse https://github.com/stenzek/duckstation/releases/tag/latest e baixe a compilação do Windows x64. Este é um arquivo ZIP contendo o executável pré-compilado.
- - Alternativamente, link de download direto: https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip
+ - Acesse https://github.com/Trixarian/duckstation-gpl/releases/tag/preview e baixe a compilação do Windows x64. Este é um arquivo ZIP contendo o executável pré-compilado.
+ - Alternativamente, link de download direto: https://github.com/Trixarian/duckstation-gpl/releases/tag/preview/duckstation-windows-x64-release.zip
  - Extraia o arquivo ZIP **para uma pasta**. O arquivo ZIP não tem um subdiretório raiz, então, se você não extrair para um subdiretório, ele irá despejar vários arquivos no seu diretório de download.
 
 Depois de baixado e extraído, pode iniciar o emulador com `duckstation-qt-x64-ReleaseLTCG.exe`. Siga o Assistente de configuração para começar.
@@ -75,22 +75,19 @@ Depois de baixado e extraído, pode iniciar o emulador com `duckstation-qt-x64-R
 
 ### Linux
 
-As únicas versões suportadas do DuckStation para Linux são o AppImage e o Flatpak na página de lançamentos. Se você instalou o DuckStation de outra fonte ou distribuição (por exemplo, EmuDeck), você deve entrar em contato com o responsável para suporte, nós não temos controle sobre isso.
+Seguem abaixo instruções para instalar as versões Flatpak e Appimage.
 
 #### AppImage
 
 Os AppImages requerem uma distribuição equivalente ao Ubuntu 22.04 ou mais recente para serem executados.
 
- - Acesse https://github.com/stenzek/duckstation/releases/tag/latest e baixe `duckstation-x64.AppImage`.
+ - Acesse https://github.com/Trixarian/duckstation-gpl/releases/tag/preview e baixe `duckstation-x64.AppImage`.
  - Execute `chmod a+x` no AppImage baixado -- após este passo, o AppImage pode ser executado como um executável típico.
 
 #### Flatpak
 
- - Acesse https://github.com/stenzek/duckstation/releases/tag/latest e baixe `duckstation-x64.flatpak`.
+ - Acesse https://github.com/Trixarian/duckstation-gpl/releases/tag/preview e baixe `duckstation-x64.flatpak`.
  - Execute `flatpak install ./duckstation-x64.flatpak`.
-
-ou, se você tiver o FlatHub configurado:
- - Execute `flatpak install org.duckstation.DuckStation`.
 
 Use `flatpak run org.duckstation.DuckStation` para iniciar, ou selecione `DuckStation` no lançador do seu ambiente de desktop. Siga o Assistente de Configuração para começar.
  
@@ -101,7 +98,7 @@ São fornecidas compilações universais do MacOS para x64 e ARM64 (Apple Silico
 MacOS Big Sir (11.0) é necessário, pois também é o requisito mínimo para o Qt.
 
 Para baixar:
- - Acesse https://github.com/stenzek/duckstation/releases/tag/latest e baixe `duckstation-mac-release.zip`.
+ - Acesse https://github.com/Trixarian/duckstation-gpl/releases/tag/preview e baixe `duckstation-mac-release.zip`.
  - Extraia o arquivo ZIP dando um duplo clique nele.
  - Abra o DuckStation.app, opcionalmente movendo-o para a localização desejada antes.
  - Dependendo da configuração do GateKeeper, você pode precisar clicar com o botão direito -> Abrir na primeira vez que executá-lo, já que certificados de assinatura de código estão fora de questão para um projeto que não gera receita alguma.
@@ -111,8 +108,6 @@ Para baixar:
 Você precisará de um dispositivo com armv7 (32 bits ARM), AArch64 (64 bits ARM) ou x86_64 (64 bits x86). 64 bits são preferíveis, os requisitos são mais altos para 32 bits, você provavelmente vai querer pelo menos um CPU de 1,5 GHz.
 
 A distribuição pelo Google Play é o mecanismo de distribuição recomendado e resultará em tamanhos de download menores: https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation
-
-**Não é fornecido suporte para o aplicativo Android**, ele é gratuito e suas expectativas devem estar alinhadas com isso. Por favor, **não** me envie e-mails sobre problemas relacionados a ele, eles serão ignorados.
 
 Se você precisar usar um APK, os links para download estão listados em https://www.duckstation.org/android/
 
@@ -137,7 +132,7 @@ Por exemplo, se sua imagem de disco se chamasse `Spyro3.cue`, você colocaria o 
 Requisitos:
  - Visual Studio 2022
 
-1. Clone o repositório: `git clone https://github.com/stenzek/duckstation.git`.
+1. Clone o repositório: `git clone https://github.com/Trixarian/duckstation-gpl.git`.
 2. Baixe o pacote de dependências em https://github.com/stenzek/duckstation-ext-qt-minimal/releases/download/latest/deps-x64.7z e extraia-o para `dep\msvc`.
 3. Abra a solução do Visual Studio `duckstation.sln` na raiz ou "Abrir Pasta" para a compilação com CMake.
 4. Compile a solução.
@@ -155,7 +150,7 @@ Requisitos (nomes de pacotes Debian/Ubuntu):
  - libcurl (`libcurl4-openssl-dev`)
  - Opcional para compilação mais rápida: Ninja (`ninja-build`)
 
-1. Clone o repositório: `git clone https://github.com/stenzek/duckstation.git -b dev`.
+1. Clone o repositório: `git clone https://github.com/Trixarian/duckstation-gpl.git -b dev`.
 2. Crie um diretório de compilação, seja dentro ou fora do diretório de origem.
 3. Execute o CMake para configurar o sistema de compilação. Supondo que o diretório de compilação seja `build-release`, execute `cmake -Bbuild-release -DCMAKE_BUILD_TYPE=Release`. Se você tiver o Ninja instalado, adicione `-GNinja` ao final da linha de comando do CMake para compilações mais rápidas.
 4. Compile o código-fonte. Para o exemplo acima, execute `cmake --build build-release --parallel`.
@@ -171,7 +166,7 @@ Requisitos:
 Opcional (recomendado para compilações mais rápidas):
  - Ninja
 
-1. Clone o repositório: `git clone https://github.com/stenzek/duckstation.git`.
+1. Clone o repositório: `https://github.com/Trixarian/duckstation-gpl.git`.
 2. Execute o CMake para configurar o sistema de compilação: `cmake -Bbuild-release -DCMAKE_BUILD_TYPE=Release`. Você pode precisar especificar `-DQt6_DIR` dependendo do seu sistema. Se você tiver o Ninja instalado, adicione `-GNinja` ao final da linha de comando do CMake para compilações mais rápidas.
 4. Compile o código-fonte: `cmake --build build-release --parallel`.
 5. Execute o binário, que está localizado no diretório de compilação em `bin/DuckStation.app`.
