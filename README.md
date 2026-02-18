@@ -5,7 +5,7 @@
 
 **Game Compatibility List:** https://docs.google.com/spreadsheets/d/e/2PACX-1vRE0jjiK_aldpICoy5kVQlpk2f81Vo6P4p9vfg4d7YoTOoDlH4PQHoXjTD2F7SdN8SSBLoEAItaIqQo/pubhtml
 
-**Discord Server:** https://www.duckstation.org/discord.html
+**Discord Server:** [https://www.duckstation.org/discord.html](https://discord.gg/xRh3NnYyMa)
 
 DuckStation is an simulator/emulator of the Sony PlayStation(TM) console, focusing on playability, speed, and long-term maintainability. The goal is to be as accurate as possible while maintaining performance suitable for low-end devices. "Hack" options are discouraged, the default configuration should support all playable games with only some of the enhancements having compatibility issues.
 
@@ -16,8 +16,8 @@ A PS1 or PS2 "BIOS" ROM image is required to to start the emulator and to play g
 DuckStation features a fully-featured frontend built using Qt, as well as a fullscreen/TV UI based on Dear ImGui.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/stenzek/duckstation/md-images/main-qt.png" alt="Main Window Screenshot" />
-  <img src="https://raw.githubusercontent.com/stenzek/duckstation/md-images/bigduck.png" alt="Fullscreen UI Screenshot" />
+  <img src="https://raw.githubusercontent.com/Trixarian/duckstation-gpl/md-images/main-qt.png" alt="Main Window Screenshot" />
+  <img src="https://raw.githubusercontent.com/Trixarian/duckstation-gpl/md-images/bigduck.png" alt="Fullscreen UI Screenshot" />
 </p>
 
 Other features include:
@@ -64,7 +64,7 @@ Other features include:
 ## Downloading and running
 Binaries of DuckStation for Windows x64/ARM64, Linux x86_64 (in AppImage/Flatpak formats), and macOS Universal Binaries are available via GitHub Releases and are automatically built with every commit/push. Binaries or packages distributed through other sources may be out of date and are not supported by the developer, please speak to them for support, not us.
 
-For x86 machines (most systems), you will need a CPU that supports the SSE4.1 instruction set. This includes all CPUs manufactured after 2007. If you want to use DuckStation with a CPU that is older, [v0.1-6995](https://github.com/stenzek/duckstation/releases/tag/v0.1-6995) is the last version that does not require SSE4.1.
+For x86 machines (most systems), you will need a CPU that supports the SSE4.1 instruction set. This includes all CPUs manufactured after 2007. If you want to use DuckStation with a CPU that is older, [v0.1-6995](https://github.com/Trixarian/duckstation-gpl/releases/tag/v0.1-6995) is the last version that does not require SSE4.1.
 
 ### Windows
 
@@ -143,7 +143,7 @@ Requirements:
 
 
 1. Clone the respository: `git clone https://github.com/Trixarian/duckstation-gpl.git`.
-2. Download the dependencies pack from https://github.com/stenzek/duckstation-ext-qt-minimal/releases/download/latest/deps-x64.7z, and extract it to `dep\msvc`.
+2. Download the dependencies pack from https://github.com/Trixarian/duckstation-ext-qt-minimal/releases/download/latest/deps-x64.7z, and extract it to `dep\msvc`.
 3. Open the Visual Studio solution `duckstation.sln` in the root, or "Open Folder" for cmake build.
 4. Build solution.
 5. Binaries are located in `bin/x64`.
